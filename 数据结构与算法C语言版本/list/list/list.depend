@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1446382794 source:k:\tempcode\list\list\main.c
+	<stdio.h>
+	<stdlib.h>
+	"List.h"
+
+1446382013 k:\tempcode\list\list\list.h
+	<stdlib.h>
+
+1446382891 source:k:\tempcode\list\list\list.c
+	"List.h"
+	<stdio.h>
+
+1457771415 source:f:\桌面快捷方式\c语言程序\数据结构与算法c语言版本\list\list\list.c
+	"List.h"
+	<stdio.h>
+
+1446382013 f:\桌面快捷方式\c语言程序\数据结构与算法c语言版本\list\list\list.h
+	<stdlib.h>
+
+1446382794 source:f:\桌面快捷方式\c语言程序\数据结构与算法c语言版本\list\list\main.c
+	<stdio.h>
+	<stdlib.h>
+	"List.h"
+

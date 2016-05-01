@@ -1,0 +1,2 @@
+#include<xxx.txt>
+#define N 8

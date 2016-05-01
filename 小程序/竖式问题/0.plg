@@ -1,0 +1,26 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 0 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPCBAC.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/0.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Administrator\Desktop\c语言\竖式问题\0.c"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPCBAC.tmp" 
+<h3>Output Window</h3>
+Compiling...
+0.c
+c:\users\administrator\desktop\c语言\竖式问题\0.c(18) : warning C4018: '<' : signed/unsigned mismatch
+
+
+
+<h3>Results</h3>
+0.obj - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
