@@ -39,7 +39,7 @@ typedef struct
 	int end;
 }Range;
 	
-//快排非递归实现
+//快排非递归实现 这里使用栈或者列队都可有实现
 int Non_Recusion_Quick_Sort(Element * num, int low, int high)
 {
 	Range temprange;
