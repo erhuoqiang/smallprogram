@@ -288,28 +288,50 @@ void Tree::LevelOrderTree(void)
 void Tree::LevelOrderTree(Node * current)
 {
     queue<Node *>q;
+    Node * Last = NULL;
+    Node * Next_Last = NULL;
     Node * temp;
+    unsigned int count  = 1; //记录当前层数
     if(current == NULL)
         return;
 
     q.push(current);
-
+    Last = current;
     cout<<"\nLevelOrderTree :\n";
+    cout<<count<<"	";
     while(!q.empty())
     {
         temp = q.front();
         q.pop();
-        cout<<temp->data<<" ";
+	
         if(temp->left != NULL)
         {
             q.push(temp->left);
+	    Next_Last = temp->left;
         }
         if(temp->right != NULL)
         {
             q.push(temp->right);
+	    Next_Last = temp->right;
         }
+	if(temp == Last)
+	{
+		count++;
+		
+		cout<<temp->data<<" ";	
+		if(Last != Next_Last)  //避免到最后一层的时候 还输出下一层的行号
+		{
+			cout<<endl<<count<<"	";
+			Last = Next_Last;
+		}
+			
+	}
+	else	
+       		 cout<<temp->data<<" ";
+	
     }
 }
+
 /**********给定二叉树判断其是否为二叉排序树********/
 //二叉排序树的中序遍历打印其实是把元素从小到大输出，利用这一特性 我们可以判断一棵树是否为二叉树
 int IsSortTree(Tree * tree)
